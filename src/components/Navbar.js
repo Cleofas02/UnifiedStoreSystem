@@ -26,7 +26,7 @@ export const Navbar = ({ user }) => {
                     <img src={Logo} height={100} width={100} alt='school-logo' className='mr-1' />
                 </Link>
                 <Link to='/'>
-                    <p className='font-bold tracking-wider text-3xl sm:block hidden'>SMSHS</p>
+                    <p className='font-bold tracking-wider text-3xl sm:block hidden'>San Mateo Senior High School</p>
                 </Link>
             </div>
             {!user && <div className='mr-5 lg:mr-4: xl:text-mr-3:  sm:m:  '>

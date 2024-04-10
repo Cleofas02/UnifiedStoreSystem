@@ -4,13 +4,14 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/storage'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBFEgLYiJbqMLIz0IReer8kv9ylfYfxhbs",
-    authDomain: "school-system-fda16.firebaseapp.com",
-    projectId: "school-system-fda16",
-    storageBucket: "school-system-fda16.appspot.com",
-    messagingSenderId: "317087459363",
-    appId: "1:317087459363:web:794c424ce2e794754de996",
-    measurementId: "G-3P8W9CWF03"
+    apiKey: "AIzaSyBuaI6KCQ613f24k3DKx4f42ncRGqaWZQQ",
+    authDomain: "unifiedstoresystem-6e62e.firebaseapp.com",
+    databaseURL: "https://unifiedstoresystem-6e62e-default-rtdb.firebaseio.com",
+    projectId: "unifiedstoresystem-6e62e",
+    storageBucket: "unifiedstoresystem-6e62e.appspot.com",
+    messagingSenderId: "1019865364473",
+    appId: "1:1019865364473:web:4f64f96b1b0f710c216f28",
+    measurementId: "G-RGJ3YPLYG6"
 };
 
 firebase.initializeApp(firebaseConfig);
