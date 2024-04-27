@@ -65,10 +65,10 @@ export const Cashout = (props) => {
                     setSection('');
                     setItem('');
                     dispatch({ type: 'EMPTY' })
-                    setSuccessMsg('Your order has been successfully placed. You can now proceed to the canteen and wait for your name or email to be called. After ten seconds, you will be redirected to the home page.');
+                    setSuccessMsg('Your order has been successfully placed. You can now proceed to the canteen and wait for your name or email to be called. After 30 seconds, you will be redirected to the home page.');
                     setTimeout(() => {
                         navigate('/')
-                    }, 10000)
+                    }, 30000)
                 }).catch(err => setError(err.message))
             }
         })
