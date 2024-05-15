@@ -81,7 +81,7 @@ export const Cashout = (props) => {
             <Navbar user={props.user} />
             <div>
                 <br />
-                <h2 className='text-center p-3  font-Pop font-bold tracking-wider text-3xl  '>CheckOut Details</h2>
+                <h2 className='text-center p-3  font-Pop font-bold tracking-wider text-3xl  '>Checkout Details</h2>
                 <br />
                 {successMsg && <div className='text-green-600 text-center p-3  font-Pop font-bold tracking-wider text-lg  '>{successMsg}</div>}
                 <form className="max-w-md mx-auto" autoComplete='off' onSubmit={cashoutSubmit}>
@@ -102,24 +102,14 @@ export const Cashout = (props) => {
                             value={date} onChange={(e) => setDate(e.target.value)} disabled />
                     </div>
                     <div>
-                        <label htmlFor="Cell no" className="block mb-2 text-sm font-medium text-gray-900 ">Cell Number :</label>
-                        <input type="number" required className="block w-full mb-4 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            onChange={(e) => setCell(e.target.value)} value={cell} placeholder='Example: 09604382831' />
-                    </div>
-                    <div>
                         <label htmlFor="section" className="block mb-2 text-sm font-medium text-gray-900 ">Grade & Section :</label>
                         <input type="text" required className="block w-full mb-4 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             onChange={(e) => setSection(e.target.value)} value={section} placeholder='12-COMPROG' />
                     </div>
                     <div>
-                        <label htmlFor="section" className="block mb-2 text-sm font-medium text-gray-900 ">Your Chosen Orders and Quantity :</label>
-                        <input type="text" required className="block w-full mb-4 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            onChange={(e) => setItem(e.target.value)} value={item} placeholder='2-Brownies 1-Food Bundle etc..  ' />
-                    </div>
-                    <div>
                         <label htmlFor="section" className="block mb-2 text-sm font-medium text-gray-900 ">Order Confirmation :</label>
                         <input type="text" required className="block w-full mb-4 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            onChange={(e) => setConfirm(e.target.value)} value={confirm} placeholder='2-Brownies 1-Food Bundle etc..  ' />
+                            onChange={(e) => setConfirm(e.target.value)} value={confirm} placeholder='1 - Water 2 - Brownies ' />
                     </div>
 
                     <div>

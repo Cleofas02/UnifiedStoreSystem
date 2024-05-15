@@ -10,9 +10,7 @@ import { CartContext } from '../global/CartContext'
 export const Navbar = ({ user }) => {
 
     const { totalQty } = useContext(CartContext);
-
     const navigate = useNavigate();
-
     const logout = () => {
         auth.signOut().then(() => {
             navigate('/login')
@@ -26,7 +24,7 @@ export const Navbar = ({ user }) => {
                     <img src={Logo} height={100} width={100} alt='school-logo' className='mr-1' />
                 </Link>
                 <Link to='/'>
-                    <p className='font-bold tracking-wider text-3xl sm:block hidden'>San Mateo Senior High School</p>
+                    <p className='font-bold tracking-wider text-3xl sm:block hidden ml-2'>San Mateo Senior High School<br></br><p className='font-bold tracking-wider text-xl sm:block hidden ml-3'>-Canteen Unfied Store System</p> </p>
                 </Link>
             </div>
             {!user && <div className='mr-5 lg:mr-4: xl:text-mr-3:  sm:m:  '>
@@ -38,7 +36,6 @@ export const Navbar = ({ user }) => {
                 <Link to='/cartproducts' ><FontAwesomeIcon icon={faCartShopping} className='text-2xl  ' /></Link>
                 <span className='mr-6 mb-12 rounded-full bg-red-700 text-slate-50 font-Pop w-6 text-center'>{totalQty}</span>
                 <button className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-lg px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none  tracking-wide " onClick={logout}>Log Out</button>
-
             </div>}
         </div>
     )
