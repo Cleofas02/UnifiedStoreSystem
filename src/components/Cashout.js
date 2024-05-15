@@ -52,18 +52,14 @@ export const Cashout = (props) => {
                 db.collection('Buyer-info ' + user.uid).doc('_' + time).set({
                     BuyerName: name,
                     BuyerEmail: email,
-                    BuyerCell: cell,
                     BuyerSection: section,
-                    BuyerItem: item,
                     BuyerPayment: totalPrice,
                     BuyerQuantity: totalQty,
                     BuyerBuyDate: date,
                     BuyerOrderConfirmation: confirm
                 }).then(() => {
-                    setCell('');
                     setConfirm('');
                     setSection('');
-                    setItem('');
                     dispatch({ type: 'EMPTY' })
                     setSuccessMsg('Your order has been successfully placed. You can now proceed to the canteen and wait for your name or email to be called. After 30 seconds, you will be redirected to the home page.');
                     setTimeout(() => {
