@@ -120,7 +120,7 @@ export const Cashout = (props) => {
                     </div>
                     <br />
                     <div>
-                        <label htmlFor="termsAgreement" className="block mb-2 text-sm font-medium text-gray-900">Screen shot the Form:</label>
+                        <label htmlFor="termsAgreement" className="block mb-2 text-sm font-medium text-gray-900">SCREEN SHOT the Form before submitting:</label>
                         <div className="flex items-center">
                             <input type="radio" id="termsAgreementYes" name="termsAgreement" value="yes" required
                                 checked={termsAgreed} onChange={() => setTermsAgreed(true)}
