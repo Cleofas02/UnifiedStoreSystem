@@ -50,26 +50,24 @@ export const AddProducts = () => {
 
 
     return (
-        <div className='h-screen bg-slate-900 flex flex-col justify-center items-center' >
-            <h1 className='text-slate-50 font-Pop text-xl'>ADD PRODUCTS</h1>
+        <div className='h-screen bg-slate-900 flex flex-col justify-center items-center'>
+            <h1 className='text-white font-Pop text-xl'>ADD PRODUCTS</h1>
             <br />
-            <form autoComplete='off' className=' flex flex-col justify-center ' onSubmit={addProduct}>
-                <label htmlFor="product-name" className="text-slate-50 font-Pop ">Product Name</label>
-
-                <input type='text' required className=' p-1  mb-2'
+            <form autoComplete='off' className='flex flex-col justify-center space-y-4' onSubmit={addProduct}>
+                <label htmlFor="product-name" className="text-white font-Pop block mb-2">Product Name</label>
+                <input type='text' required className='border-gray-700 p-1 mb-2 bg-gray-800 text-white'
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
 
-                <label htmlFor="product-name" className='text-slate-50 font-Pop '>Product Price</label>
-
-                <input type='number' required className='p-1 mt-1'
+                <label htmlFor="product-price" className='text-white font-Pop block mt-1'>Product Price</label>
+                <input type='number' required className='border-gray-700 p-1 mt-1 bg-gray-800 text-white'
                     onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
 
-                <input type='file' required className='text-slate-50 mt-4' onChange={productImgHandler} id='file' />
+                <input type='file' required className='border-gray-700 text-white mt-4 cursor-pointer bg-gray-800'
+                    onChange={productImgHandler} id='file' />
                 <br />
-                <button className=" border w-20 h-9 mt-2 text-slate-50 font-Pop m-auto">ADD</button>
+                <button className="border border-blue-500 w-20 h-9 mt-2 text-white font-Pop m-auto bg-blue-500 hover:bg-blue-700 transition-colors duration-200">ADD</button>
             </form>
-            {error && <span className='text-slate-50 font-Pop mt-5'>{error}</span>}
-
+            {error && <span className='text-red-500 font-Pop mt-5'>{error}</span>}
         </div>
     )
 }
