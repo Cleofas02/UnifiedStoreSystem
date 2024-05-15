@@ -21,7 +21,7 @@ export const Navbar = ({ user }) => {
         <div className='flex justify-between items-center p-2  font-Pop '>
             <div className='flex items-center ml-4 '>
                 <Link to="/">
-                    <img src={Logo} height={100} width={100} alt='school-logo' className='mr-1' />
+                    <img src={Logo} height={100} width={100} alt='school-logo' className='mr-1 sm:block hidden' />
                 </Link>
                 <Link to='/'>
                     <p className='font-bold tracking-wider text-3xl sm:block hidden ml-2'>San Mateo Senior High School<br></br><p className='font-bold tracking-wider text-xl sm:block hidden ml-3'>-Canteen Unfied Store System</p> </p>
