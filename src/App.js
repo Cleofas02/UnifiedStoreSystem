@@ -46,7 +46,7 @@ export class App extends Component {
           <BrowserRouter>
             <Routes>
               <Route exact path='/' Component={() => <Home user={this.state.user} />} />
-              <Route path='/upload' Component={AddProducts} />
+              <Route path='/62331478615670891832' Component={AddProducts} />
               <Route path='/admin' Component={Uploadauth} />
               <Route path='/signup' Component={Singup} />
               <Route path='/login' Component={Login} />
