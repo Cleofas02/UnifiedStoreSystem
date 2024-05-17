@@ -15,7 +15,7 @@ export const Uploadauth = () => {
     const checkPassword = () => {
         if (enteredPassword === password) {
             alert("Access granted!");
-            navigate("/upload");
+            navigate("/62331478615670891832");
         } else {
             alert("Incorrect password. Access denied!");
             navigate("/")
